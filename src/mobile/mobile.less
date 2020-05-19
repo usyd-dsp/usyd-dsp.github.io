@@ -1,0 +1,72 @@
+@import "../theme";
+
+//覆盖默认颜色
+.ant-menu-dark.ant-menu-inline .ant-menu-item, .ant-menu-dark.ant-menu-inline .ant-menu-submenu-title{
+  fill: #FFF;
+}
+
+//覆盖weiui的颜色
+.weui-tab{
+  .weui-tabbar{
+    .weui-tabbar__item.weui-bar__item_on{
+      fill: #1890FF;
+      .weui-tabbar__label{
+        color:  #1890FF;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.weui-tabbar__label{
+  margin-bottom: 0;
+}
+
+.bcu-mobile-header{
+  height: 50px;
+  width: 100%;
+  background: @background-black;
+
+  color: #FFF;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.bcu-mobile-sidebar{
+  position: absolute;
+  top: 50px;
+  bottom: 53px;
+
+  display: block;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  li{
+    display: block;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+.bcu-mobile-body{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 0;
+  bottom: 53px;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  overflow-y: auto;
+}
+.weui-cells__title{
+  font-size: 16px;
+  background: #999;
+  color:  #FFF;
+}
+.weui-cell__bd{
+  font-size: 14px;
+}

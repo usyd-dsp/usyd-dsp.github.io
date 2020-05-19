@@ -1,0 +1,35 @@
+@import "../theme.less";
+
+.bcu-header{
+  height: 64px;
+  .logo{
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 7px;
+    margin-right: 20px;
+  }
+  .slogan{
+    color: rgba(255, 255, 255, 0.8);
+    font-size:24px;
+    font-weight: bold;
+    margin-right: 15px;
+    span{
+      font-size: 12px;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  .btns{
+    display: inline-block;
+    vertical-align: top;
+    line-height:64px;
+  }
+}
+.bcu-article{
+  .calc(height, "100% - 64px - 90px");
+  .side-bar-icon{
+    width: 40px;
+  }
+}
