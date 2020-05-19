@@ -1,1 +1,0 @@
-export const clans = [{id: '1', name:"兄弟营"}, {id:'2', "name":"高手营"}];

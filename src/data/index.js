@@ -1,7 +1,7 @@
 import { rule } from "./rule";
-import { clans } from "./clans";
+import { headerItems } from "./headerItems";
 
 export const data = {
-    clans: clans,
+    headerItems: headerItems,
     'rule': rule
 };

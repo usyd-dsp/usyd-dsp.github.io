@@ -17,7 +17,7 @@ export class PC extends React.Component{
         this.state = {
             currentClan: ['1'],
             currentChildPage: <XDY/>,
-            clans: []
+            headerItems: []
         };
 
     }
@@ -26,8 +26,8 @@ export class PC extends React.Component{
      */
     componentWillMount(){
         //构造部落
-        data.clans.forEach((item, i)=>{
-            this.state.clans.push(<Menu.Item key={item.id} onClick={(e)=>this.chooseClan(e)}>{item.name}</Menu.Item>);
+        data.headerItems.forEach((item, i)=>{
+            this.state.headerItems.push(<Menu.Item key={item.id} onClick={(e)=>this.chooseClan(e)}>{item.name}</Menu.Item>);
         });
         this.forceUpdate();
     }
@@ -45,7 +45,7 @@ export class PC extends React.Component{
                         className="btns"
                         onSelect={(item, key, selectedKeys)=>this.chooseClan(item, key, selectedKeys)}
                     >
-                        { this.state.clans }
+                        { this.state.headerItems }
                     </Menu>
                 </Header>
                 { this.state.currentChildPage }
@@ -69,12 +69,12 @@ export class PC extends React.Component{
         //更改子页面
         switch (item.key){
             case "1":
-                //兄弟营
+                // homePage
                 this.state.currentChildPage = <XDY/>;
                 this.forceUpdate();
                 break;
             case "2":
-                //养老营
+                // detail Page
                 this.state.currentChildPage = null;
                 this.forceUpdate();
                 break;
