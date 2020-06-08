@@ -35,11 +35,12 @@ export class App extends React.Component{
      * 更新界面
      */
     updateSize = () => {
+        /*
         if(document.body.clientWidth > 768){
             this.setState({ page: 'PC' });
         }else{
             this.setState({ page: 'Mobile' });
-        }
+        }*/
     };
     /**
      * 构造app
@@ -48,8 +49,9 @@ export class App extends React.Component{
         return(
             <BrowserRouter>
                 <div className="bcu-body">
-                    { this.state.page === 'PC' ? <PC/> : null }
-                    { this.state.page === 'Mobile' ? <Mobile/> : null }
+                    <PC/>
+                    { /*this.state.page === 'PC' ? <PC/> : null*/ }
+                    { /*this.state.page === 'Mobile' ? <Mobile/> : null*/ }
                     {/*<Route exact path="/" component={Home}/>*/}
                     {/*<Route path="/details" component={Details}/>*/}
                 </div>
